@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Pic, Wrapper, Box } from "./styled";
+import { Text2, Text, Wrapper, Box } from "./styled";
 class Card extends Component {
   constructor(props) {
     super(props);
@@ -10,11 +10,14 @@ class Card extends Component {
       <div>
         <Wrapper>
           <Box>
-            <h1>{this.props.name}</h1>
-            {this.props.model}
-            {this.props.manufacturer}
-            {this.props.starship_class}
-            {this.props.created}
+            <Text>{this.props.name}</Text>
+            <Text2>Model: </Text2> {this.props.model}
+            <br />
+            <Text2>Manufacturer: </Text2> {this.props.manufacturer}
+            <br />
+            <Text2>Starship Class:</Text2> {this.props.starship_class}
+            <br />
+            <Text2>Created:</Text2> {this.props.created}
           </Box>
         </Wrapper>
       </div>

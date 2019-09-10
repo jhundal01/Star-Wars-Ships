@@ -1,13 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 const Text = styled.h1`
-  color: white;
+  color: #ffe200;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 `;
-class Header extends React.Component {
+class Header extends Component {
   render() {
     return (
       <div>
-        <Text>The Star Wars Spaceships</Text>
+        <Text>Star Wars {this.props.Label}</Text>
       </div>
     );
   }
